@@ -4,8 +4,8 @@ def badge_maker(name)
 end
 
 def batch_badge_creator(name)
-badges= []
-  badges.push("#{badge_maker(name)}")
+badges=[]
+  badges.push(badge_maker)
   return badges
 
 end
