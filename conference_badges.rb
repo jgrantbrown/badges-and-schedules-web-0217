@@ -3,9 +3,11 @@ def badge_maker(name)
   return "Hello, my name is #{name}."
 end
 
-def batch_badge_creator(badge_maker)
-attendees_list= []
- return attendees_list.push(badge_maker(name))
+def batch_badge_creator(name)
+badges= []
+  badges.push("#{badge_maker(name)}")
+  return badges
+
 end
 
 def assign_rooms(attendees)
