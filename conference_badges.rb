@@ -13,10 +13,8 @@ def assign_rooms(attendees)
 end
 
 def printer(attendees)
-  count=1
-   attendees.each do |i|
-     puts badges(i)
-     puts room_assignments(i)
-     count+=1
+  puts batch_badge_creator(attendees).each
+  end
+  puts assign_rooms(attendees).each
 end
 end
