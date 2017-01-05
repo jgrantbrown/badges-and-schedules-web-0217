@@ -13,8 +13,8 @@ def assign_rooms(attendees)
 end
 
 def printer(attendees)
-   attendees.map {|attendee| puts "batch_badge_creator(#{attendee})"}
+  batch_badge_creator(attendees).each {|badge| "#{badge}"}
 
-  attendees.map {|attendee| puts "assign_rooms(attendee)(#{attendee}")
+  assign_rooms(attendees).each {|room| "#{room}"}
 
 end
